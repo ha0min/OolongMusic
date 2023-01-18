@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="mainBody">
     <m-header/>
     <tab/>
     <router-view :style="viewStyle" v-slot="{ Component }">
@@ -21,6 +21,9 @@
 </template>
 
 <style lang="scss">
+#mainBody{
+  min-height: 100vh;
+}
 
 </style>
 <script>

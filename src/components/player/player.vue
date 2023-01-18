@@ -941,18 +941,26 @@ export default {
       }
     }
 
-    &.trans-full-enter-from,&.trans-full-leave-to {
+    &.trans-full-enter-from, &.trans-full-leave-to {
       transform: translate3d(0, 100px, 0);
-      opacity: 0.65;
+      opacity: 0.1;
+
+      .cover-content {
+        transform: translate3d(0, -40px, 0);
+      }
     }
 
     //cubic-bezier(0.29, 1.02, 0, 1.03)
     &.trans-full-enter-active {
-      transition: all 0.24s cubic-bezier(0.45, 0, 0.55, 1) !important;
+      transition: all 0.24s cubic-bezier(0.45, 0, 0.55, 1);
+
+      //.cover-content {
+      //  transition: all 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+      //}
     }
 
     &.trans-full-leave-active {
-      transition: all 0.56s cubic-bezier(0.45, 0, 0.55, 1) !important;
+      transition: all 0.23s cubic-bezier(0.45, 0, 0.55, 1);
     }
   }
 }

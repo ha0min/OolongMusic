@@ -20,10 +20,10 @@ const token = 5381
 // 所以如果超过 100 条数据，我们要把数据按每组 100 条切割，发送多个请求
 function getSongMidGroup (mid) {
   let midGroup = []
-  if (mid.length > 100) {
-    const groupLen = Math.ceil(mid.length / 100)
+  if (mid.length > 15) {
+    const groupLen = Math.ceil(mid.length / 15)
     for (let i = 0; i < groupLen; i++) {
-      midGroup.push(mid.slice(i * 100, (100 * (i + 1))))
+      midGroup.push(mid.slice(i * 15, (15 * (i + 1))))
     }
   } else {
     midGroup = [mid]

@@ -215,7 +215,8 @@ export default {
 .trans-mini-player-enter-from,
 .trans-mini-player-leave-to {
   transform: translate(0px, -100px);
-  opacity: 0.45;
+  opacity: 0.25;
+  //filter: blur(1px);
   background: transparent;
 
   .cover-wrapper {
@@ -226,14 +227,14 @@ export default {
 
 }
 
-.trans-mini-player-enter-to,
-.trans-mini-player-leave-from {
-  .cover-wrapper {
-    img {
-      display: none !important;
-    }
-  }
-}
+//.trans-mini-player-enter-to,
+//.trans-mini-player-leave-from {
+//  .cover-wrapper {
+//    img {
+//      display: none !important;
+//    }
+//  }
+//}
 
 .trans-mini-player-enter-active {
   transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1) !important;
