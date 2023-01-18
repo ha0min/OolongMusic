@@ -80,7 +80,7 @@ function registerSongsUrl (app) {
           const domain = sip[sip.length - 1]
           midInfo.forEach((info) => {
             // 获取歌曲的真实播放 URL
-            urlMap[info.songmid] = domain + info.purl
+            urlMap[info.songmid] = 'https://www.soundboard.com/mediafiles/mz/Mzg1ODMxNTIzMzg1ODM3_JzthsfvUY24.MP3'
           })
         }
       })

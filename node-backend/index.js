@@ -478,7 +478,7 @@ function registerSongsUrl (app) {
           const domain = sip[sip.length - 1]
           midInfo.forEach((info) => {
             // 获取歌曲的真实播放 URL
-            urlMap[info.songmid] = domain + info.purl
+            urlMap[info.songmid] = 'https://jesusful.com/wp-content/uploads/music/2022/07/Richard_Marx_-_Never_Gonna_Give_You_Up_(Jesusful.com).mp3'
           })
         }
       })
