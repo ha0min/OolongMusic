@@ -28,7 +28,7 @@ export default function useAnimation (isShowLyric) {
       name: 'move',
       animation,
       presets: {
-        duration: 300,
+        duration: 400,
         easing: 'cubic-bezier(0.45, 0, 0.55, 1)'
       }
     })
@@ -78,7 +78,7 @@ export default function useAnimation (isShowLyric) {
       name: 'leave',
       animation,
       presets: {
-        duration: 250,
+        duration: 350,
         easing: 'cubic-bezier(0.45, 0, 0.55, 1)'
       }
     })

@@ -217,7 +217,8 @@ class Singer {
     this.id = singer.singer_id
     this.mid = singer.singer_mid
     this.name = singer.singer_name
-    this.pic = singer.singer_pic.replace(/\.webp$/, '.jpg').replace('150x150', '800x800')
+    this.pic = singer.singer_pic.replace('150x150', '300x300')
+      // .replace(/\.webp$/, '.jpg')
   }
 }
 

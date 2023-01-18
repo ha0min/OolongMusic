@@ -214,8 +214,9 @@ export default {
 // 迷你播放器的动画
 .trans-mini-player-enter-from,
 .trans-mini-player-leave-to {
-  bottom: 100px;
-  opacity: 0.45;
+  transform: translate(0px, -100px);
+  opacity: 0.25;
+  //filter: blur(1px);
   background: transparent;
 
   .cover-wrapper {
@@ -226,27 +227,27 @@ export default {
 
 }
 
-.trans-mini-player-enter-to,
-.trans-mini-player-leave-from {
-  .cover-wrapper {
-    img {
-      display: none !important;
-    }
-  }
-}
+//.trans-mini-player-enter-to,
+//.trans-mini-player-leave-from {
+//  .cover-wrapper {
+//    img {
+//      display: none !important;
+//    }
+//  }
+//}
 
 .trans-mini-player-enter-active {
   transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1) !important;
 
   .cover-wrapper {
     img {
-      transition: all 0.01s 0.3s ease !important;
+      transition: all 0.01s 0.2s ease !important;
     }
   }
 }
 
 .trans-mini-player-leave-active {
-  transition: all 0.3s ease-out !important;
+  transition: all 0.23s ease-out !important;
 
   .cover-wrapper {
     img {
